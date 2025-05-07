@@ -55,7 +55,6 @@ ol {
   align-items: end;
   width: 1140px;
   grid-template-columns: 711px 399px;
-  grid-template-rows: 534px;
   grid-template-areas: 'result content__details';
   gap: 30px;
 }
@@ -78,11 +77,6 @@ ol {
   object-position: center;
 }
 
-.result__video:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 1px;
-}
-
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -98,11 +92,12 @@ ol {
   margin-bottom: 5px;
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.22;
+  line-height: 22px;
 }
 
 .search-form__label {
   display: flex;
+  align-items: center;
   width: fit-content;
 }
 
@@ -112,7 +107,7 @@ ol {
 }
 
 .search-form__label-text {
-  line-height: 1.22;
+  line-height: 22px;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -127,7 +122,7 @@ ol {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 225px;
+  min-width: 225px;
   padding: 2px 5px 2px 0;
   background-color: transparent;
   border: none;
@@ -136,7 +131,7 @@ ol {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
-  line-height: 1.22;
+  line-height: 22px;
 }
 
 .search-form__textfield::placeholder {
@@ -226,7 +221,7 @@ ol {
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 0.94;
+  line-height: 94%;
   text-transform: uppercase;
 }
 
@@ -294,7 +289,7 @@ ol {
   margin-bottom: 6px;
   font-family: Oswald, sans-serif;
   font-size: 30px;
-  line-height: 1;
+  line-height: 100%;
   text-transform: uppercase;
   white-space: nowrap;
   overflow: hidden;
@@ -302,7 +297,7 @@ ol {
 }
 
 .content__video-card-description {
-  line-height: 0.88;
+  line-height: 16px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;  
